@@ -12,9 +12,11 @@ import openfl.Lib;
 import openfl.utils.JNI;
 #end
 
-import scripts.ByRobinAssets;
-
-
+#if ios
+@:buildXml('<include name="${haxelib:facebookads}/project/build.xml"/>')
+//This is just here to prevent the otherwise indirectly referenced native code from being stripped at link time.
+@:cppFileCode('extern "C" int facebook_register_prims();void com_byrobin_facebook_link(){facebook_register_prims();}')
+#end
 class FBAudienceNetwork
 {
 
@@ -57,8 +59,8 @@ class FBAudienceNetwork
  public static function initBanner(position:Int):Void
     {
 		var mode:Int;
-		var adID:String = ByRobinAssets.FBBannerPlacement;
-		if(ByRobinAssets.FBTestAds)
+		var adID:String = FacebookAdsConfig.bannerPlacementID;
+		if(FacebookAdsConfig.enableTestAds)
 		{
 			mode = 1;
 		}else{
@@ -254,8 +256,8 @@ class FBAudienceNetwork
 	public static function initMediumRect(position:Int):Void
     {
 		var mode:Int;
-		var adID:String = ByRobinAssets.FBRectBannerPlacement;
-		if(ByRobinAssets.FBTestAds)
+		var adID:String = FacebookAdsConfig.rectBannerPlacementID;
+        if(FacebookAdsConfig.enableTestAds)
 		{
 			mode = 1;
 		}else{
@@ -455,8 +457,8 @@ class FBAudienceNetwork
 	 public static function initInterstitial():Void
     {
 		var mode:Int;
-		var adID:String = ByRobinAssets.FBInterstitialPlacement;
-		if(ByRobinAssets.FBTestAds)
+		var adID:String = FacebookAdsConfig.interstitialPlacementID;
+        if(FacebookAdsConfig.enableTestAds)
 		{
 			mode = 1;
 		}else{

@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
     
-	<!-- iOS only -->
-    
+    <source path="src" />
+
     <section if="ios">
         
-        <setenv name="FACEBOOKADS_ENABLED" value="true" />
         <set name="facebookads" />
         
-        <echo value='|----------------------------------------------------------------------------|' />
-        <echo value='| Facebook Ads: Enable byRobin Extension manager in "Setting->Extension      |' />
-        <echo value='|----------------------------------------------------------------------------|' />
-        
-        <ndll name="facebook" />
-    
-        <!--<dependency path="frameworks/FBAudienceNetwork.framework" />-->
         <dependency path="frameworks/FBAudienceNetwork.framework" />
         
     </section>
     
-    
-    <!-- Android only -->
-    
     <section if="android">
-        
-        <classpath name="src" />
         
         <dependency name="facebook" path="dependencies/facebook" />
         

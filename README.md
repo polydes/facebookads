@@ -4,10 +4,6 @@ For Stencyl 3.4 9280 and above
 
 Stencyl extension for “Facebook Audience Network” on iOS and Android. This extension allows you to easily integrate Facebook Audience Network on your Stencyl game / application. (http://www.stencyl.com)
 
-### Important!!
-
-This Extension Required the Toolset Extension Manager [https://byrobingames.github.io](https://byrobingames.github.io)
-
 ![facebookadstoolset](https://byrobingames.github.io/img/facebookads/facebookadstoolset.png)
 
 ## Main Features
@@ -15,15 +11,6 @@ This Extension Required the Toolset Extension Manager [https://byrobingames.gith
   * Banners & Interstitial Support.
   * Setup your banners to be on top or on the bottom of the screen.
   
-## How to Install
-
-To install this Engine Extension, go to the toolset (byRobin Extension Mananger) in the Extension menu of your game inside Stencyl.<br/>
-![toolsetextensionlocation](https://byrobingames.github.io/img/toolset/toolsetextensionlocation.png)<br/>
-Select the Extension from the menu and click on "Download"
-
-If you not have byRobin Extension Mananger installed, install this first.<br/>
-Go to: [https://byrobingames.github.io](https://byrobingames.github.io)
-
 ## Documentation and Block Examples
 
 <strong>Step 1:</strong> Apply for Audience Network
@@ -100,28 +87,6 @@ In addition, you can access your performance data via an API. Please see [this g
 - 2016-11-18 (1.5)  Updated for Heyzap Extension 2.7
 - 2017-03-19 (1.6)  Updated to use with Heyzap Extension 2.9, Update SDK to iOS: 4.20.2 Android: 4.20.0, Added Android Gradle support.
 - 2017-05-16(1.6.1) Update SDK to iOS: 4.22 Android: 4.22, Tested for Stencyl 3.5, Required byRobin Toolset Extension Manager
-
-## Submitting a Pull Request
-
-This software is opensource.<br/>
-If you want to contribute you can make a pull request
-
-Repository: [https://github.com/byrobingames/facebookads](https://github.com/byrobingames/facebookads)
-
-Need help with a pull request?<br/>
-[https://help.github.com/articles/creating-a-pull-request/](https://help.github.com/articles/creating-a-pull-request/)
-
-### ANY ISSUES?
-
-Add the issue on GitHub<br/>
-Repository: [https://github.com/byrobingames/facebookads/issues](https://github.com/byrobingames/facebookads/issues)
-
-Need help with creating a issue?<br/>
-[https://help.github.com/articles/creating-an-issue/](https://help.github.com/articles/creating-an-issue/)
-
-## Donate
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HKLGFCAGKBMFL)<br />
 
 ## Privacy Policy
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stencyl-addons>
+
+	<property-page-addon target="dashboard.sidebar">
+		
+		<field name="enableFacebookAds" />
+		
+		<header label="Facebook Ads Placements"/>
+		<!-- Note: Create Facebook ads on <a href="https://developers.facebook.com/docs/audience-network">https://developers.facebook.com/docs/audience-network</a> -->
+		<field name="bannerPlacementID" label="Banner placementID" editor="SingleLine" />
+		<field name="rectBannerPlacementID" label="Rect. Banner placementID" editor="SingleLine" />
+		<field name="interstitialPlacementID" label="Interstitial placementID" editor="SingleLine" />
+		<field name="testAds" label="Enable Testads" />
+		
+	</property-page-addon>
+
+</stencyl-addons>

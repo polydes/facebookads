@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game-data>
+
+	<include>
+		<field name="enableFacebookAds" type="boolean" default="true" />
+	</include>
+
+	<config classname="FacebookAdsConfig">
+		<field name="bannerPlacementID"        type="text" />
+		<field name="rectBannerPlacementID"    type="text" />
+		<field name="interstitialPlacementID"  type="text" />
+		<field name="testAds"                  type="boolean" />
+	</config>
+
+</game-data>

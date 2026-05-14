@@ -1,8 +1,6 @@
 buildscript {
 	repositories {
-		maven {
-			url "http://repo1.maven.org/maven2/"
-		}
+		mavenCentral()
 	}
 	dependencies {
 		classpath 'com.android.tools.build:gradle:::ANDROID_GRADLE_PLUGIN::'
@@ -12,6 +10,11 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
+	compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+	buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+	namespace 'com.byrobin.FaceBook'
+
 	sourceSets {
 		main {
 			manifest.srcFile 'AndroidManifest.xml'
@@ -19,11 +22,14 @@ android {
 			res.srcDirs = ['res']
 		}
 	}
-	compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
-	buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+	
+	defaultConfig {
+		minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+		targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+	}
 }
 
 dependencies {
-	compile fileTree(dir: 'libs', include: '*.jar')
-	compile project(':deps:extension-api')
+	api project(':deps:extension-api')
+	implementation 'com.facebook.android:audience-network-sdk:4.22.0'
 }
