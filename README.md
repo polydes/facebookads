@@ -77,17 +77,6 @@ To access the dashboards, in your app’s [settings page](https://developers.fac
 
 In addition, you can access your performance data via an API. Please see [this guide](https://developers.facebook.com/docs/audience-network/reporting-api) for more info
 
-## Version History
-
-- 2015-05-11 (1.0) : First release
-- 2015-06-13 (1.1) : update info.txt file
-- 2015-08-01 (1.2) : now download it from github
-- 2016-03-28 (1.3) Updated SDK to 4.10.1
-- 2016-09-30 (1.4) Updated iOS and Android SDK to 4.16.0
-- 2016-11-18 (1.5)  Updated for Heyzap Extension 2.7
-- 2017-03-19 (1.6)  Updated to use with Heyzap Extension 2.9, Update SDK to iOS: 4.20.2 Android: 4.20.0, Added Android Gradle support.
-- 2017-05-16(1.6.1) Update SDK to iOS: 4.22 Android: 4.22, Tested for Stencyl 3.5, Required byRobin Toolset Extension Manager
-
 ## Privacy Policy
 
 https://www.facebook.com
